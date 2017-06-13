@@ -6,8 +6,8 @@ import getopt
 
 
 # old names that will be replaced
-PROJ_NAME = 'watchdog'
-APP_NAME = 'watcher'
+PROJ_NAME = 'demoproject'
+APP_NAME = 'demoapp'
 CAP_APP_NAME = APP_NAME.capitalize()
 # list of files that should be modified
 FILES = [
@@ -42,12 +42,14 @@ def modify_files(project_name, app_name):
             )
             temp = temp.replace(PROJ_NAME, project_name).replace(
                 APP_NAME, app_name).replace(CAP_APP_NAME, cap_app_name)
+        with open(elem, 'w') as fp:
+            fp.write(temp)
 
-def modify_dirs(project_name, app_name)
+def modify_dirs(project_name, app_name):
     """
     Renames folders.
     """
-    os.rename(PROJ_NAME, project_name):
+    os.rename(PROJ_NAME, project_name)
     os.rename(APP_NAME, app_name)
 
 
