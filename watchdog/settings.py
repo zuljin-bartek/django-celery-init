@@ -113,7 +113,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'watcher.apps.WatcherApp',
+    'watcher.apps.WatcherConfig',
     'django_celery_beat',
 ]
 
