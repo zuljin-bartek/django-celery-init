@@ -2,5 +2,6 @@
 /db.sqlite3
 *.log
 **/__pycache__
-**/migrations
+**/migrations/*
+!**/migrations/__init__.py
 *.pyc
